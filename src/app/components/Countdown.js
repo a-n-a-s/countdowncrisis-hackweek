@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const getRemainingTime = () => {
   const now = new Date();
-  const hackweekEnd = new Date('2025-06-29T23:59:59');
+  const hackweekEnd = new Date('2025-06-28T23:59:59');
   const diff = Math.max(0, Math.floor((hackweekEnd - now) / 1000));
   
   const days = Math.floor(diff / (24 * 60 * 60));
